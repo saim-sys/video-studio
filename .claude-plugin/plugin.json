@@ -1,0 +1,21 @@
+{
+  "name": "studio",
+  "displayName": "Video Studio",
+  "version": "0.1.0",
+  "description": "Faceless sports-history YouTube videos from topic to final render: research, script, footage, edit plan, GPU render and frame-by-frame audit.",
+  "author": { "name": "Video Studio" },
+  "keywords": ["video", "youtube", "editing", "ffmpeg", "sports"],
+  "userConfig": {
+    "python": {
+      "type": "string",
+      "title": "Python command",
+      "description": "How to run Python 3.10+ on this computer, e.g. python, python3 or a full path to python.exe",
+      "default": "python"
+    },
+    "channel_dir": {
+      "type": "directory",
+      "title": "Channel folder",
+      "description": "Your channel folder (brand kit, footage cache and videos). /studio:setup creates it if it's new."
+    }
+  }
+}

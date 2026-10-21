@@ -1,0 +1,12 @@
+{
+  "name": "video-studio",
+  "description": "Video Studio: the faceless sports-video pipeline for Claude Code.",
+  "owner": { "name": "Video Studio" },
+  "plugins": [
+    {
+      "name": "studio",
+      "source": "./",
+      "description": "Topic to finished video: research, script, footage, edit plan, GPU render and frame-by-frame audit."
+    }
+  ]
+}
