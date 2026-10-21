@@ -1,4 +1,4 @@
-# Video Studio
+﻿# Video Studio
 
 Faceless sports-history YouTube videos with Claude Code: research, script, footage, edit plan, GPU render and a
 frame-by-frame audit. You pick the topic, record the voiceover and approve the hook. Claude does the rest.
@@ -9,7 +9,7 @@ Requires an active Video Studio membership: your license key is in your Whop ord
 1. Install [Claude Code](https://code.claude.com), Python 3.10 or newer, and ffmpeg.
 2. In Claude Code:
    ```
-   /plugin marketplace add <owner>/video-studio
+   /plugin marketplace add saim-sys/video-studio
    /plugin install studio@video-studio
    ```
    When asked, enter how to run Python (`python`, `python3` or a full path) and choose a folder for your channel.
