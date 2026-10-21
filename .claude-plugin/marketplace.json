@@ -1,7 +1,7 @@
 {
   "name": "video-studio",
-  "description": "Video Studio: the faceless sports-video pipeline for Claude Code.",
-  "owner": { "name": "Video Studio" },
+  "description": "FLS Studio: the faceless sports-video pipeline for Claude Code.",
+  "owner": { "name": "Faceless Success" },
   "plugins": [
     {
       "name": "studio",

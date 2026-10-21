@@ -1,9 +1,9 @@
 {
   "name": "studio",
-  "displayName": "Video Studio",
+  "displayName": "FLS Studio",
   "version": "0.1.0",
   "description": "Faceless sports-history YouTube videos from topic to final render: research, script, footage, edit plan, GPU render and frame-by-frame audit.",
-  "author": { "name": "Video Studio" },
+  "author": { "name": "Faceless Success" },
   "keywords": ["video", "youtube", "editing", "ffmpeg", "sports"],
   "userConfig": {
     "python": {
