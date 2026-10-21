@@ -9,7 +9,7 @@
 import hashlib, io, json, os, platform, shutil, subprocess, sys, time, urllib.error, urllib.request, zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SERVER = (os.environ.get("STUDIO_SERVER") or json.load(open(os.path.join(HERE, "server.json")))["url"]).rstrip("/")
+SERVER = (os.environ.get("STUDIO_SERVER") or json.load(open(os.path.join(HERE, "server.json"), encoding="utf-8-sig"))["url"]).rstrip("/")
 GRACE_HOURS = 72          # keep working this long without reaching the server (flaky internet, travel)
 
 
@@ -40,6 +40,7 @@ def hwid():
 def call(method, path, body=None, token=None, binary=False):
     req = urllib.request.Request(SERVER + path, method=method, data=json.dumps(body).encode() if body else None)
     req.add_header("content-type", "application/json")
+    req.add_header("user-agent", "FLS-Studio/0.1 (+https://github.com/saim-sys/video-studio)")  # Cloudflare blocks Python's default
     req.add_header("x-hwid", hwid())
     if token:
         req.add_header("authorization", "Bearer " + token)
